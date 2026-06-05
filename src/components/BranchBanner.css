@@ -1,0 +1,29 @@
+.branch-banner {
+  margin-top: 58px;
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid var(--gold);
+}
+
+.branch-banner p {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.branch-banner strong {
+  color: var(--gold);
+}
+
+.branch-banner a {
+  color: var(--green-600);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.branch-banner a:hover {
+  text-decoration: underline;
+}

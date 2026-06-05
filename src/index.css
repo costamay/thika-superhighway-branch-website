@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root {
+  --green-900: #004d2e;
+  --green-800: #006b3f;
+  --green-700: #008751;
+  --green-600: #00a364;
+  --green-100: #e8f5ee;
+  --white: #ffffff;
+  --black: #0d0f0e;
+  --gray-700: #3d4541;
+  --gray-500: #6b7570;
+  --gray-200: #e2e8e4;
+  --gold: #c9a227;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  --radius: 12px;
+  --max-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section--dark {
+  background: var(--black);
+  color: var(--white);
+}
+
+.section--muted {
+  background: var(--green-100);
+}
+
+.section-header {
+  max-width: 640px;
+  margin-bottom: 3rem;
+}
+
+.section-header p {
+  margin-top: 1rem;
+  color: var(--gray-500);
+  font-size: 1.1rem;
+}
+
+.section-header--light p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--green-700);
+  margin-bottom: 0.5rem;
+}
+
+.section-header--light .section-label {
+  color: var(--green-600);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--green-800);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--green-900);
+}
+
+.btn--outline {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn--outline:hover {
+  background: var(--white);
+  color: var(--green-900);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

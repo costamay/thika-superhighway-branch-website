@@ -1,0 +1,20 @@
+.branch-logo {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+.branch-logo--nav {
+  height: 48px;
+}
+
+.branch-logo--footer {
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.branch-logo--hero {
+  height: clamp(140px, 28vw, 220px);
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+}

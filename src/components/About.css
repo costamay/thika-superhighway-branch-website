@@ -1,0 +1,63 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about__card {
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0, 77, 46, 0.06);
+}
+
+.about__card h3 {
+  font-size: 1.75rem;
+  color: var(--green-800);
+  margin-bottom: 1rem;
+}
+
+.about__card p {
+  color: var(--gray-700);
+}
+
+.about__icon {
+  color: var(--green-700);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.about__card--highlight {
+  background: linear-gradient(160deg, var(--green-900), var(--green-800));
+  color: var(--white);
+  border: none;
+}
+
+.about__card--highlight h3 {
+  color: var(--white);
+}
+
+.about__card--highlight p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about__trophies {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about__trophies li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.about__trophies li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}

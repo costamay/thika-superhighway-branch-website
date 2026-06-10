@@ -16,6 +16,7 @@ import omuneh from '../assets/members/omuneh.jpg'
 import dagy from '../assets/members/dagy.jpg'
 import claris from '../assets/members/claris.jpg'
 import ogwedhi from '../assets/members/ogwedhi.jpg'
+import beril from '../assets/members/beril.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -103,14 +104,14 @@ export const branchMembers = [
     committee: true,
     passportImage: amos,
   },
-  {
-    id: 'TSG-006',
-    name: 'John Ongare',
-    role: 'Head of Security',
-    committee: true,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  },
+  // {
+  //   id: 'TSG-006',
+  //   name: 'John Ongare',
+  //   role: 'Head of Security',
+  //   committee: true,
+  //   passportImage:
+  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  // },
   {
     id: 'TSG-007',
     name: 'Byrone Omondi',
@@ -203,11 +204,10 @@ export const branchMembers = [
   },
   {
     id: 'TSG-018',
-    name: 'Joseph Owade',
+    name: 'Beril Achieng',
     role: 'Member',
     committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: beril,
   },
   {
     id: 'TSG-019',

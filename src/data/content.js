@@ -37,6 +37,7 @@ import mboya from '../assets/gallery/mboya.jpg'
 import mombasa from '../assets/gallery/mombasa.jpg'
 import tayaDok from '../assets/gallery/tayadok.jpg'
 import toNyando from '../assets/gallery/to-nyando.jpg'
+import samson from '../assets/members/samson.jpg'
 
 
 export const club = {
@@ -291,7 +292,7 @@ export const branchMembers = [
     name: 'Samson Ainda',
     role: 'Member',
     committee: false,
-    passportImage: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: samson,
   },
   {
     id: 'TSG-031',

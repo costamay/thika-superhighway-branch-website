@@ -2,7 +2,7 @@ import tito from '../assets/members/tito.jpg'
 import millicent from '../assets/members/milly.jpg'
 import geofrey from '../assets/members/owano.jpg'
 import willish from '../assets/members/willish.jpg'
-import elly from '../assets/members/elly.jpg'
+import elly2 from '../assets/members/elly2.jpg'
 import amos from '../assets/members/amos.jpg'
 import aketch from '../assets/members/aketch.jpg' 
 import wycliffe from '../assets/members/ajulu.jpg'
@@ -17,6 +17,7 @@ import dagy from '../assets/members/dagy.jpg'
 import claris from '../assets/members/claris.jpg'
 import ogwedhi from '../assets/members/ogwedhi.jpg'
 import beril from '../assets/members/beril.jpg'
+import moses from '../assets/members/Moses.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -38,6 +39,7 @@ import mombasa from '../assets/gallery/mombasa.jpg'
 import tayaDok from '../assets/gallery/tayadok.jpg'
 import toNyando from '../assets/gallery/to-nyando.jpg'
 import samson from '../assets/members/samson.jpg'
+import toUtawala from '../assets/gallery/toUtawala.jpg'
 
 
 export const club = {
@@ -95,7 +97,7 @@ export const branchMembers = [
     name: 'Elly Onyango',
     role: 'Welfare Chairperson',
     committee: true,
-    passportImage: elly,
+    passportImage: elly2,
   },
   {
     id: 'TSG-005',
@@ -105,14 +107,13 @@ export const branchMembers = [
     committee: true,
     passportImage: amos,
   },
-  // {
-  //   id: 'TSG-006',
-  //   name: 'John Ongare',
-  //   role: 'Head of Security',
-  //   committee: true,
-  //   passportImage:
-  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  // },
+  {
+    id: 'TSG-006',
+    name: 'Kennedy Otieno',
+    role: 'Head of Security',
+    committee: true,
+    passportImage: kennedy,
+  },
   {
     id: 'TSG-007',
     name: 'Augustine Okwaro',
@@ -143,7 +144,7 @@ export const branchMembers = [
   },
   {
     id: 'TSG-011',
-    name: 'Charles Osogo',
+    name: 'Jackline Akinyi',
     role: 'Member',
     committee: false,
     passportImage:
@@ -173,7 +174,7 @@ export const branchMembers = [
   },
   {
     id: 'TSG-015',
-    name: 'Evans Obogno',
+    name: 'Rose Atieno',
     role: 'Member',
     committee: false,
     passportImage:
@@ -181,7 +182,7 @@ export const branchMembers = [
   },
   {
     id: 'TSG-016',
-    name: 'George Omondi',
+    name: 'Stephen Okoth',
     role: 'Member',
     committee: false,
     passportImage:
@@ -218,7 +219,7 @@ export const branchMembers = [
   },
   {
     id: 'TSG-021',
-    name: 'Jared Odhiambo',
+    name: 'Faith Achieng',
     role: 'Member',
     committee: false,
     passportImage:
@@ -232,21 +233,21 @@ export const branchMembers = [
     passportImage: aketch,
   },
   
-  {
-    id: 'TSG-023',
-    name: 'Kennedy Otieno',
-    role: 'Member',
-    committee: false,
-    passportImage: kennedy,
-  },
-  {
-    id: 'TSG-024',
-    name: 'Kennedy Ochoro',
-    role: 'Member',
-    committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  },
+  // {
+  //   id: 'TSG-023',
+  //   name: 'Kennedy Otieno',
+  //   role: 'Member',
+  //   committee: false,
+  //   passportImage: kennedy,
+  // },
+  // {
+  //   id: 'TSG-024',
+  //   name: 'Kennedy Ochoro',
+  //   role: 'Member',
+  //   committee: false,
+  //   passportImage:
+  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  // },
   {
     id: 'TSG-025',
     name: 'Laventah Akoth',
@@ -263,30 +264,29 @@ export const branchMembers = [
     passportImage:
       'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
   },
-  {
-    id: 'TSG-027',
-    name: 'Mary Juma',
-    role: 'Member',
-    committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  },
+  // {
+  //   id: 'TSG-027',
+  //   name: 'Mary Juma',
+  //   role: 'Member',
+  //   committee: false,
+  //   passportImage:
+  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  // },
   {
     id: 'TSG-028',
     name: 'Moses Onyango',
     role: 'Member',
     committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: moses,
   },
-  {
-    id: 'TSG-029',
-    name: 'Paul Ouma',
-    role: 'Member',
-    committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  },
+  // {
+  //   id: 'TSG-029',
+  //   name: 'Paul Ouma',
+  //   role: 'Member',
+  //   committee: false,
+  //   passportImage:
+  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  // },
   {
     id: 'TSG-030',
     name: 'Samson Ainda',
@@ -294,14 +294,14 @@ export const branchMembers = [
     committee: false,
     passportImage: samson,
   },
-  {
-    id: 'TSG-031',
-    name: 'Stephen Mengo',
-    role: 'Member',
-    committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  },
+  // {
+  //   id: 'TSG-031',
+  //   name: 'Stephen Mengo',
+  //   role: 'Member',
+  //   committee: false,
+  //   passportImage:
+  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  // },
   {
     id: 'TSG-032',
     name: 'Stephen Caliph',
@@ -451,6 +451,16 @@ export const galleryImages = [
 export const blogPosts = [
   {
     id: 1,
+    title: 'CoC Fund raising at Utawala Branch — Sunday 16th August 2026',
+    excerpt:
+      'Thika Superhighway branch members will be at Utawala branch this Sunday for a joint CoC fund raising event. Join us as we support our fellow Green Army branch and contribute to the cause.',
+    date: '2026-08-16',
+    category: 'Branch News',
+    image: toUtawala,
+    readTime: '3 min',
+  },
+  {
+    id: 2,
     title: 'CoC Fund raising at Nyando Branch — Sunday 7th June 2026',
     excerpt:
       'Thika Superhighway branch members will be at Nyando branch this Sunday for a joint CoC fund raising event. Join us as we support our fellow Green Army branch and contribute to the cause.',
@@ -460,7 +470,7 @@ export const blogPosts = [
     readTime: '3 min',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Collabo Harambee - at Lucky Summer Branch — Sunday 7th June 2026',
     excerpt:
       'Thika Superhighway branch members will be at Lucky Summer branch this Sunday for a joint development event. Join us as we support our fellow Green Army branch.',
@@ -470,7 +480,7 @@ export const blogPosts = [
     readTime: '4 min',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Fun of the Year Award - Taya Dok',
     excerpt:
       'Taya Dok wins the branch\'s "Fun of the Year" award for his infectious energy, match-day antics, and unwavering support for K\'Ogalo. A true fan favourite!',
@@ -514,26 +524,26 @@ export const blogPosts = [
 export const upcomingMatches = [
   {
     id: 1,
-    date: '2026-05-31',
+    date: '2026-08-16',
     time: '15:00 EAT',
-    competition: 'FKF Premier League',
+    competition: 'Green Legacy Cup',
     home: 'Gor Mahia',
-    away: 'Nairobi United',
+    away: 'Migori Youth FC',
     venue: 'Nyayo National Stadium',
     isHome: true,
-    branchNote: 'Last match of the season. All Roads lead to Nyayo — join us for the final push!',
-  },
-  {
-    id: 2,
-    date: '2026-05-27',
-    time: '16:00 EAT',
-    competition: 'FKF Premier League',
-    home: 'Mara Sugar FC',
-    away: 'Gor Mahia',
-    venue: 'Raila Odinga Stadium - Homabay',
-    isHome: false,
-    branchNote: 'Away fixture - Join us as we travel to Homabay to support our boys.',
+    branchNote: 'Gor Mahia vs Migori Youth FC — home fixture, join us at Nyayo for the match.',
   }
+  // {
+  //   id: 2,
+  //   date: '2026-05-27',
+  //   time: '16:00 EAT',
+  //   competition: 'FKF Premier League',
+  //   home: 'Mara Sugar FC',
+  //   away: 'Gor Mahia',
+  //   venue: 'Raila Odinga Stadium - Homabay',
+  //   isHome: false,
+  //   branchNote: 'Away fixture - Join us as we travel to Homabay to support our boys.',
+  // }
 
   // {
   //   id: 3,

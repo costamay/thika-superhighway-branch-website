@@ -34,7 +34,8 @@ export default function Footer() {
                 Facebook
               </a>
             </li>
-            {/* <li><span className="footer__note">Branch WhatsApp — ask your zone rep</span></li> */}
+            <li><span className="footer__note">Branch WhatsApp — For registered members</span></li>
+            <li><span className="footer__note">Branch Email — {club.officalEmail}</span></li>
           </ul>
         </div>
       </div>

@@ -45,6 +45,7 @@ import toUtawala from '../assets/gallery/toUtawala.jpg'
 export const club = {
   name: 'Gor Mahia FC',
   nickname: "K'Ogalo",
+  officalEmail: 'thikasuperhighwayunited@gmail.com',
   // officialSite: 'https://www.gormahia.com',
   officialSite: "https://www.facebook.com/groups/2055216798173675"
 }

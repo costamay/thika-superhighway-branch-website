@@ -20,6 +20,7 @@ import beril from '../assets/members/beril.jpg'
 import moses from '../assets/members/Moses.jpg'
 import wuodanna from '../assets/members/wuodanna.jpg'
 import jackline from '../assets/members/jackline.jpg'
+import faith from '../assets/members/faith.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -224,8 +225,7 @@ export const branchMembers = [
     name: 'Faith Achieng',
     role: 'Member',
     committee: false,
-    passportImage:
-      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: faith,
   },
   {
     id: 'TSG-023',

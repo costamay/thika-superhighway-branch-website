@@ -18,6 +18,7 @@ import claris from '../assets/members/claris.jpg'
 import ogwedhi from '../assets/members/ogwedhi.jpg'
 import beril from '../assets/members/beril.jpg'
 import moses from '../assets/members/Moses.jpg'
+import wuodanna from '../assets/members/wuodanna.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -216,7 +217,7 @@ export const branchMembers = [
     name: 'Jared Ochieng',
     role: 'Member',
     committee: false,
-    passportImage: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: wuodanna,
   },
   {
     id: 'TSG-022',

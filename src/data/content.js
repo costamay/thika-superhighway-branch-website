@@ -21,6 +21,7 @@ import moses from '../assets/members/Moses.jpg'
 import wuodanna from '../assets/members/wuodanna.jpg'
 import jackline from '../assets/members/jackline.jpg'
 import faith from '../assets/members/faith.jpg'
+import seline from '../assets/members/seline.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -330,8 +331,7 @@ export const branchMembers = [
     name: 'Selline Achieng',
     role: 'Member',
     committee: false,
-    passportImage:
-       'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+    passportImage: seline,
    }
 ]
 

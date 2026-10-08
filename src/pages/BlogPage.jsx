@@ -29,7 +29,7 @@ export default function BlogPage() {
         <div className="container">
           <header className="section-header">
             <span className="section-label">Fixtures</span>
-            <h2>Recent Gor Mahia matches</h2>
+            <h2>Upcoming Gor Mahia matches</h2>
             {/* <p>Branch travel and watch-party notes included where planned.</p> */}
           </header>
           <div className="fixtures__list">

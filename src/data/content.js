@@ -51,7 +51,7 @@ export const club = {
   name: 'Gor Mahia FC',
   nickname: "K'Ogalo",
   officalEmail: 'thikasuperhighwayunited@gmail.com',
-  // officialSite: 'https://www.gormahia.com',
+  officialWebsite: 'https://www.gormahiathikasuperhighwaybranch.co.ke/',
   officialSite: "https://www.facebook.com/groups/2055216798173675"
 }
 
@@ -551,14 +551,14 @@ export const blogPosts = [
 export const upcomingMatches = [
   {
     id: 1,
-    date: '2026-10-13',
-    time: '7:00 EAT',
+    date: '2026-11-01',
+    time: '4:15 EAT',
     competition: 'SportsPesa League',
     home: 'GOR MAHIA',
-    away: 'MSEAL FC',
-    venue: 'Nyayo National Stadium',
+    away: 'KCB',
+    venue: 'Afraha Stadium, Nakuru',
     isHome: true,
-    branchNote: 'Gor Mahia vs MSEAL FC — home fixture, join us at Nyayo for the match.',
+    branchNote: 'Gor Mahia vs KCB — home fixture, join us at Afraha Stadium for the match.',
   }
   // {
   //   id: 2,

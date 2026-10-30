@@ -36,6 +36,7 @@ export default function Footer() {
             </li>
             <li><span className="footer__note">Branch WhatsApp — For registered members</span></li>
             <li><span className="footer__note">Branch Email — {club.officalEmail}</span></li>
+            <li><span className="footer__note">Branch Website — {club.officialWebsite}</span></li>
           </ul>
         </div>
       </div>

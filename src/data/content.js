@@ -22,6 +22,7 @@ import wuodanna from '../assets/members/wuodanna.jpg'
 import jackline from '../assets/members/jackline.jpg'
 import faith from '../assets/members/faith.jpg'
 import seline from '../assets/members/seline.jpg'
+import rose from '../assets/members/rose.jpg'
 
 // gallery
 import cert from '../assets/gallery/group-certificate.jpg'
@@ -282,17 +283,10 @@ export const branchMembers = [
     committee: false,
     passportImage: moses,
   },
-  // {
-  //   id: 'TSG-029',
-  //   name: 'Paul Ouma',
-  //   role: 'Member',
-  //   committee: false,
-  //   passportImage:
-  //     'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
-  // },
+  
   {
     id: 'TSG-027',
-    name: 'Samson Ainda',
+    name: 'Samson Adinda',
     role: 'Member',
     committee: false,
     passportImage: samson,
@@ -332,7 +326,38 @@ export const branchMembers = [
     role: 'Member',
     committee: false,
     passportImage: seline,
-   }
+   },
+   {
+    id: 'TSG-033',
+    name: 'Rose Atieno',
+    role: 'Member',
+    committee: false,
+    passportImage: rose,
+  },
+  {
+    id: 'TSG-034',
+    name: 'Jared Ouma',
+    role: 'Member',
+    committee: false,
+    passportImage:
+      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  },
+  {
+    id: 'TSG-035',
+    name: 'Charity',
+    role: 'Member',
+    committee: false,
+    passportImage:
+      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  },
+  {
+    id: 'TSG-036',
+    name: 'Erick Otieno',
+    role: 'Member',
+    committee: false,
+    passportImage:
+      'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=533&fit=crop',
+  }
 ]
 
 /** Committee subset shown on the landing page */

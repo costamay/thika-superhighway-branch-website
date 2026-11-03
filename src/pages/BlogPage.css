@@ -42,6 +42,10 @@
   background: linear-gradient(90deg, var(--green-100), var(--white) 30%);
 }
 
+.fixture-card--past {
+  border-left-color: var(--gold);
+}
+
 .fixture-card__meta {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +88,16 @@
 
 .fixture-card__venue {
   font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.fixture-card__result {
+  margin: 0;
+  color: var(--green-900);
+  font-weight: 700;
+}
+
+.fixtures__empty {
   color: var(--gray-500);
 }
 

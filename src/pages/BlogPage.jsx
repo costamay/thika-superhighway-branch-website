@@ -1,4 +1,4 @@
-import { blogPosts, upcomingMatches, branch } from '../data/content'
+import { blogPosts, matches, branch } from '../data/content'
 import Footer from '../components/Footer'
 import './BlogPage.css'
 
@@ -11,7 +11,46 @@ function formatDate(iso) {
   })
 }
 
+function isPastMatch(match) {
+  const matchDate = new Date(`${match.date}T00:00:00`)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  return matchDate < today
+}
+
+function MatchCard({ match, isPast }) {
+  return (
+    <article
+      className={`fixture-card ${match.isHome ? 'fixture-card--home' : ''} ${
+        isPast ? 'fixture-card--past' : ''
+      }`}
+    >
+      <div className="fixture-card__meta">
+        <time dateTime={match.date}>{formatDate(match.date)}</time>
+        <span>{match.time}</span>
+        <span className="fixture-card__comp">{match.competition}</span>
+      </div>
+      <div className="fixture-card__teams">
+        <span className={match.home.toLowerCase() === 'gor mahia' ? 'team--gor' : ''}>
+          {match.home}
+        </span>
+        <span className="fixture-card__vs">vs</span>
+        <span className={match.away.toLowerCase() === 'gor mahia' ? 'team--gor' : ''}>
+          {match.away}
+        </span>
+      </div>
+      {isPast && <p className="fixture-card__result">Result: {match.result || 'Not recorded'}</p>}
+      <p className="fixture-card__venue">{match.venue}</p>
+      {match.branchNote && <p className="fixture-card__branch">{match.branchNote}</p>}
+      {!isPast && match.isHome && <span className="fixture-card__badge">Home</span>}
+    </article>
+  )
+}
+
 export default function BlogPage() {
+  const pastMatches = matches.filter(isPastMatch)
+  const upcomingMatches = matches.filter((match) => !isPastMatch(match))
+
   return (
     <>
       <section className="blog-hero">
@@ -33,35 +72,30 @@ export default function BlogPage() {
             {/* <p>Branch travel and watch-party notes included where planned.</p> */}
           </header>
           <div className="fixtures__list">
-            {upcomingMatches.map((match) => (
-              <article
-                key={match.id}
-                className={`fixture-card ${match.isHome ? 'fixture-card--home' : ''}`}
-              >
-                <div className="fixture-card__meta">
-                  <time dateTime={match.date}>{formatDate(match.date)}</time>
-                  <span>{match.time}</span>
-                  <span className="fixture-card__comp">{match.competition}</span>
-                </div>
-                <div className="fixture-card__teams">
-                  <span className={match.home === 'Gor Mahia' ? 'team--gor' : ''}>
-                    {match.home}
-                  </span>
-                  <span className="fixture-card__vs">vs</span>
-                  <span className={match.away === 'Gor Mahia' ? 'team--gor' : ''}>
-                    {match.away}
-                  </span>
-                </div>
-                <p className="fixture-card__venue">{match.venue}</p>
-                {match.branchNote && (
-                  <p className="fixture-card__branch">{match.branchNote}</p>
-                )}
-                {match.isHome && <span className="fixture-card__badge">Home</span>}
-              </article>
-            ))}
+            {upcomingMatches.length > 0 ? (
+              upcomingMatches.map((match) => <MatchCard key={match.id} match={match} />)
+            ) : (
+              <p className="fixtures__empty">No upcoming matches have been added yet.</p>
+            )}
           </div>
         </div>
       </section>
+
+      {pastMatches.length > 0 && (
+        <section className="fixtures section section--muted">
+          <div className="container">
+            <header className="section-header">
+              <span className="section-label">Match history</span>
+              <h2>Past matches</h2>
+            </header>
+            <div className="fixtures__list">
+              {pastMatches.map((match) => (
+                <MatchCard key={match.id} match={match} isPast />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="blog-list section section--muted">
         <div className="container">
